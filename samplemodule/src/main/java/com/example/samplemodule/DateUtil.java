@@ -14,11 +14,7 @@ public class DateUtil {
         mContext = context;
     }
 
-    public void displayCurrentDate() {
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, YYYY");
-        Date currentDate = calendar.getTime();
-        String currentDateFormatted = simpleDateFormat.format(currentDate).toString();
-        Toast.makeText(mContext, currentDateFormatted, Toast.LENGTH_SHORT).show();
-    }
+   public void toast() {
+       Toast.makeText(mContext, "Hello world!", Toast.LENGTH_SHORT).show();
+   }
 }
